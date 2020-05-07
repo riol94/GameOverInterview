@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>User Data</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form id="myForm" action="http://localhost:8080/GameOverTest/api/user/index.php" method="POST">
+                <fieldset>
+                    <legend>Get Your Teammates</legend>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Please enter your User ID</label>
+                        <input type="text" class="form-control" id="user_id" placeholder="448ecb1213">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="row pt-4" id="teammates">
+            
+        </div>
+    </div>
+    <script src="js/getTeammates.js"></script>
+</body>
+</html>
